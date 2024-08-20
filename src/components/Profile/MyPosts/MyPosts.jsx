@@ -10,8 +10,8 @@ function MyPosts(props){
                 <button>Remove</button>
             </div>
             <div className={css.posts}>
-                <Post />
-                <Post />
+                <Post message='Hi, dick'/>
+                <Post message='Hello dickhead'/>
                 <Post />
                 <Post />
             </div>
