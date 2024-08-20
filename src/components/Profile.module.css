@@ -1,0 +1,11 @@
+.content{
+    width: 1280px;
+    grid-area: content;
+    background-color: gray;
+}
+.avatar{
+    width: 100px;
+}
+.item{
+    color: greenyellow;
+}
