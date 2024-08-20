@@ -4,16 +4,16 @@ function Navbar() {
     return(
         <nav className={css.nav}>
             <div className={`${css.item} ${css.active}`}>
-                <a href='#'>Profile</a>
+                <a href='react/src/components/Navbar/Navbar#'>Profile</a>
             </div>
             <div className={css.item}>
-                <a href='#'>Messages</a>
+                <a href='react/src/components/Navbar/Navbar#'>Messages</a>
             </div>
             <div className={css.item}>
-                <a href='#'>News</a>
+                <a href='react/src/components/Navbar/Navbar#'>News</a>
             </div>
             <div className={css.item}>
-                <a href='#'>Music</a>
+                <a href='react/src/components/Navbar/Navbar#'>Music</a>
             </div>
         </nav>
     )
