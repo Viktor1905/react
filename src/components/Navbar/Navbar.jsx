@@ -1,6 +1,6 @@
 import css from './Navbar.module.css';
 
-function Navbar() {
+const Navbar = (props) => {
     return(
         <nav className={css.nav}>
             <div className={`${css.item} ${css.active}`}>

@@ -10,3 +10,18 @@
 .item{
     color: greenyellow;
 }
+.like_block{
+    display: flex;
+    align-items: center;
+}
+.heart{
+    font-size: 30px;
+    cursor: pointer;
+}
+.likes_count{
+    text-align: center;
+    cursor: default;
+}
+.message{
+    cursor: default;
+}

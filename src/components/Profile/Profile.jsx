@@ -1,8 +1,8 @@
 import css from './Profile.module.css'
 import {MyPosts} from "./MyPosts/MyPosts";
-function Profile(props){
+const Profile = (props) => {
     return (
-        <div className={css.content}>
+        <div className={css.profileContent}>
             <div>
                 <img className={css.headerImg} src='https://c4.wallpaperflare.com/wallpaper/85/319/775/city-lights-night-car-nissan-skyline-gt-r-r33-mazda-rx-7-hd-wallpaper-preview.jpg'></img>
             </div>
