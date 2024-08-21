@@ -1,3 +1,22 @@
 .dialogs_wrapper{
+    display: grid;
+
+    grid-template-areas: 'dialogs messages';
+    grid-template-columns: 2fr 10fr;
+}
+.dialogs_items{
+    grid-area: dialogs;
+}
+.dialogs_items .dialog{
+    text-decoration: none;
+    color: black;
+}
+.dialogs_items .dialog.active{
+    color: gold;
+}
+.messages{
+    grid-area: messages;
+}
+.messages .message{
 
 }
