@@ -4,16 +4,16 @@ const Navbar = (props) => {
     return(
         <nav className={css.nav}>
             <div className={`${css.item} ${css.active}`}>
-                <a href='react/src/components/Navbar/Navbar#'>Profile</a>
+                <a href='/profile'>Profile</a>
             </div>
             <div className={css.item}>
-                <a href='react/src/components/Navbar/Navbar#'>Messages</a>
+                <a href='/dialogs'>Messages</a>
             </div>
             <div className={css.item}>
-                <a href='react/src/components/Navbar/Navbar#'>News</a>
+                <a href='/news'>News</a>
             </div>
             <div className={css.item}>
-                <a href='react/src/components/Navbar/Navbar#'>Music</a>
+                <a href='/music'>Music</a>
             </div>
         </nav>
     )
