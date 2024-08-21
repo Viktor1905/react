@@ -23,6 +23,7 @@ const Dialogs = (props) => {
                     <NavLink to='/dialogs/6' className={({isActive}) => isActive ? `${css.dialog} ${css.active}` : `${css.dialog}`}>Anonim</NavLink>
                 </div>
             </div>
+
             <div className={css.messages}>
                 <div className={css.message}>Hi</div>
                 <div className={css.message}>Hello</div>

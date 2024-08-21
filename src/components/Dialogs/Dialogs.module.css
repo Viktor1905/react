@@ -1,6 +1,6 @@
 .dialogs_wrapper{
+    padding: 30px;
     display: grid;
-
     grid-template-areas: 'dialogs messages';
     grid-template-columns: 2fr 10fr;
 }
