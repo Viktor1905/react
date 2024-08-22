@@ -7,4 +7,12 @@
 }
 .block_description{
     padding: 20px;
+    display:  flex;
+    align-items: center;
+}
+.description{
+    padding: 0 20px;
+}
+.name{
+    padding: 10px 0;
 }

@@ -8,6 +8,10 @@ const ProfileInfo = (props) => {
             </div>
             <div className={css.block_description}>
                 <img className={css.avatar} src='https://yt3.ggpht.com/ytc/AKedOLT3yfimMX6Ak6FV4tzsZOGoUn2-nKMPjCFAYgre=s900-c-k-c0x00ffffff-no-rj'></img>
+                <div className={css.description}>
+                    <div className={css.name}>Skyline R32</div>
+                    <div className={css.status}>RATATATA</div>
+                </div>
             </div>
         </div>
     )
