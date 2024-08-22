@@ -4,7 +4,8 @@
     border-radius: 50%;
 }
 .item{
-    color: greenyellow;
+    color: green;
+    padding: 10px 0;
 }
 .like_block{
     display: flex;

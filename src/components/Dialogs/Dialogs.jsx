@@ -1,14 +1,9 @@
 import css from './Dialogs.module.css'
-import {NavLink} from "react-router-dom";
 import {DialogItem} from "./DialogItem/DialogItem";
+import {Message} from "./Message/Message";
 
-const Message = (props) => {
-    return (
-        <div className = {css.message}>{props.message}</div>
-    )
-}
 const Dialogs = (props) => {
-    let dialogsData = [
+    let dialogs = [
         {id: 1, name: 'Viktor'},
         {id: 2, name: 'Ekaterina'},
         {id: 3, name: 'Segrey'},
@@ -16,23 +11,22 @@ const Dialogs = (props) => {
         {id: 5, name: 'Evgeniy'},
         {id: 6, name: 'Aleksandr'},
     ];
-    let messagesData = [
+    let messages = [
         {message: 'Hi', id: 1},
         {message: 'Hello', id: 2},
         {message: 'Hi,bro', id: 3},
     ];
+    let dialogsElement = dialogs.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />);
+    let messagesElement = messages.map(message => <Message message={message.message} id={message.id} />);
+
     return (
         <div className = {css.dialogs_wrapper}>
             <div className = {css.dialogs_items}>
-                <DialogItem name = {dialogsData[0].name} id = {dialogsData[0].id} />
-                <DialogItem name = {dialogsData[1].name} id = {dialogsData[1].id} />
-                <DialogItem name = {dialogsData[2].name} id = {dialogsData[2].id} />
+                {dialogsElement}
             </div>
 
             <div className = {css.messages}>
-                <Message message = 'Hi' />
-                <Message message = 'Hello' />
-                <Message message = 'Hi, bro' />
+                {messagesElement}
             </div>
         </div>
     )
