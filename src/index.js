@@ -13,7 +13,6 @@ let posts = [
     {id: 3, message: 'Nice ava', likesCount: 8, liked: false},
     {id: 4, message: 'Are you learning React?', likesCount: 12, liked: true },
 ];
-let postsElement = posts.map(post => <Post message = {post.message} likesCount = {post.likesCount} liked = {post.liked} />)
 let dialogs = [
     {id: 1, name: 'Viktor'},
     {id: 2, name: 'Ekaterina'},
@@ -27,13 +26,12 @@ let messages = [
     {message: 'Hello', id: 2},
     {message: 'Hi,bro', id: 3},
 ];
-let dialogsElement = dialogs.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />);
-let messagesElement = messages.map(message => <Message message={message.message} id={message.id} />);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <App postsElement = {postsElement} dialogsElement = {dialogsElement} messagesElement = {messagesElement}/>
+    <App posts = {posts} dialogs = {dialogs} messages = {messages}/>
   </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function
