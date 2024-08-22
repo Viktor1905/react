@@ -1,8 +1,4 @@
-.content{
-    width: 1280px;
-    grid-area: content;
-    background-color: gray;
-}
+
 .avatar{
     width: 80px;
     border-radius: 50%;
@@ -15,8 +11,14 @@
     align-items: center;
 }
 .heart{
-    font-size: 30px;
+    width: 20px;
     cursor: pointer;
+    stroke: rgb(155, 155, 155, 0.5);
+    fill: rgb(155, 155, 155, 0.5);
+}
+.heart.liked {
+    stroke: red;
+    fill: red;
 }
 .likes_count{
     text-align: center;
